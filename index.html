@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Varad Kadam | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <section id="landing">
+    <div class="landing-content fade-in">
+      <h1>Welcome to Varad Kadam's Portfolio</h1>
+      <p class="typing">Hi, I’m <strong>VarBot</strong> 🤖 — your smart guide to Varad's world. How can I help you today?</p>
+      <div class="chatbot-img bounce">
+        <img src="https://cdn-icons-png.flaticon.com/512/4712/4712105.png" alt="VarBot Chatbot" />
+      </div>
+      <div id="chatbox">
+        <div id="chatlog"></div>
+        <input type="text" id="userInput" placeholder="Ask me anything about Varad..." />
+        <button onclick="getResponse()">Send</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="menu">
+    <h2>Explore More</h2>
+    <div class="tile-container">
+      <button data-section="about">About Me</button>
+      <button data-section="education">Education</button>
+      <button data-section="skills">Skills</button>
+      <button data-section="projects">Projects</button>
+      <button data-section="certificates">Certificates</button>
+    </div>
+  </section>
+
+  <section id="about" class="collapsible hidden">
+    <h2>About Me</h2>
+    <p>I’m Varad Kadam, a final-year ENTC student from Wadia College, Pune.</p>
+    <ul>
+      <li>Captain of U14 and U17 Cricket Teams 🏏️</li>
+      <li>2nd Place in U14 Swimming Championship 🏊</li>
+    </ul>
+    <h3>📇 Personal Details</h3>
+    <ul>
+      <li><strong>📞 Phone:</strong> +91 7387387776</li>
+      <li><strong>📧 Email:</strong> varadkadam2004@gmail.com</li>
+      <li><strong>🎂 Date of Birth:</strong> 06 Decemeber 2004</li>
+      <li><strong>🔗 LinkedIn:</strong> <a href="https://linkedin.com/in/varad-kadam" target="_blank">linkedin.com/in/varad-kadam</a></li>
+      <li><strong>💻 GitHub:</strong> <a href="https://github.com/Varad-6" target="_blank">github.com/Varad-6</a></li>
+    </ul>
+  </section>
+
+  <section id="education" class="collapsible hidden">
+    <h2>Education</h2>
+    <ul>
+      <li><strong>B.E. in ENTC</strong> - Wadia College, Pune (CGPAs: 7.00, 6.59, 6.77, 8.04, 8.56, 8.43)</li>
+      <li><strong>HSC (Science)</strong> - St. Paul Junior College, Satara (2022) - 72.50%</li>
+      <li><strong>SSC</strong> - Chhatrapati Shahu Academy, Satara (2020) - 88.60%</li>
+    </ul>
+  </section>
+
+  <section id="skills" class="collapsible hidden">
+    <h2>Skills</h2>
+    <div class="skill-badges">
+      <span>Python</span>
+      <span>Java</span>
+      <span>React.js</span>
+      <span>Node.js</span>
+      <span>MongoDB</span>
+      <span>OpenCV</span>
+      <span>TensorFlow</span>
+      <span>MediaPipe</span>
+      <span>MySQL</span>
+    </div>
+  </section>
+
+  <section id="projects" class="collapsible hidden">
+    <h2>Projects</h2>
+
+    <div class="project-card">
+      <h3>🖐️ Hand Gesture Recognition</h3>
+      <p>Real-time system detecting hand gestures like "OK", "Fist", etc. using CNN and MediaPipe.</p>
+      <p><strong>Tech:</strong> Python, OpenCV, MediaPipe, TensorFlow</p>
+      <img src="assets/hand-ok.png" alt="OK Gesture" width="300px" />
+      <img src="assets/hand-fist.png" alt="Fist Gesture" width="300px" />
+      <br />
+      <a href="https://github.com/Varad-6/hand-gesture-recognition" target="_blank">
+        <button>🔗 View Code</button>
+      </a>
+    </div>
+
+    <div class="project-card">
+      <h3>🚗 Yaha Car Rental Website</h3>
+      <p>A full-featured car rental platform where users can explore cars, fill out reservations, view booking confirmations, and get in touch with support.</p>
+      <p><strong>Tech:</strong> PHP, HTML, CSS, JavaScript, MySQL</p>
+      <img src="assets/yaha-home.png" alt="Yaha Home" width="300px" />
+      <img src="assets/yaha-booking.png" alt="Booking Success" width="300px" />
+      <img src="assets/yaha-form.png" alt="Reservation Form" width="300px" />
+      <img src="assets/yaha-models.png" alt="Car Models List" width="300px" />
+      <img src="assets/yaha-dashboard.png" alt="Car Dashboard" width="300px" />
+      <img src="assets/yaha-contact.png" alt="Contact Form" width="300px" />
+      <br />
+      <a href="https://github.com/Varad-6/Car-rental-website" target="_blank">
+        <button>🔗 View Code</button>
+      </a>
+    </div>
+
+  </section>
+
+  <section id="certificates" class="collapsible hidden">
+    <h2>Certificates</h2>
+
+    <div class="certificate-card">
+      <p><strong>Deloitte Technology Job Simulation</strong></p>
+      <a href="assets/deloitte.pdf" target="_blank"><button>📄 View Certificate</button></a>
+    </div>
+
+    <div class="certificate-card">
+      <p><strong>Java Programming – Board Infinity</strong></p>
+      <a href="assets/coursera-java.pdf" target="_blank"><button>📄 View Certificate</button></a>
+    </div>
+
+    <div class="certificate-card">
+      <p><strong>Google Data Fundamentals – Coursera</strong></p>
+      <a href="assets/coursera-data.pdf" target="_blank"><button>📄 View Certificate</button></a>
+    </div>
+
+    <div class="certificate-card">
+      <p><strong>OOP in Java – UCSD</strong></p>
+      <a href="assets/coursera-oop.pdf" target="_blank"><button>📄 View Certificate</button></a>
+    </div>
+  </section>
+
+  <footer>
+    <p>Made with ❤️ by Varad & VarBot</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,156 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(120deg, #f0f8ff, #e6f7ff);
+  overflow-x: hidden;
+  text-align: center;
+}
+
+h1, h2, h3 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.fade-in {
+  animation: fadeIn 2s ease-in forwards;
+}
+
+.bounce {
+  animation: bounce 2s infinite;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.tile-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
+}
+
+.tile-container button {
+  padding: 12px 20px;
+  border-radius: 12px;
+  background: #4e8cff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 16px;
+}
+
+.tile-container button:hover {
+  transform: scale(1.1);
+  background-color: #3b6fc2;
+}
+
+.chatbot-img img {
+  width: 140px;
+  border-radius: 50%;
+  display: block;
+  margin: 20px auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+#chatbox {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 15px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#chatlog {
+  height: 150px;
+  overflow-y: auto;
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  font-size: 14px;
+  text-align: left;
+  background: #fafafa;
+}
+
+#chatbox input {
+  width: 65%;
+  padding: 8px;
+  margin-right: 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+#chatbox button {
+  padding: 8px 12px;
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.collapsible {
+  display: none;
+  padding: 20px;
+  animation: fadeIn 0.5s ease-in-out;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.collapsible.show {
+  display: block;
+}
+
+.skill-badges span {
+  display: inline-block;
+  background: #3498db;
+  color: white;
+  padding: 8px 12px;
+  margin: 5px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.project-card, .certificate-card {
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 15px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.project-card img {
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  max-width: 100%;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #4e8cff;
+  color: white;
+  font-weight: bold;
+  margin-top: 40px;
+}
+
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
